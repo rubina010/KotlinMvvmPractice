@@ -1,7 +1,7 @@
 /*
 package com.example.rubinathapa.openweatherkotlin.di
 
-import com.example.rubinathapa.openweatherkotlin.MainActivity
+import com.example.rubinathapa.openweatherkotlin.ui.main.MainActivity
 import dagger.Module
 import dagger.android.ContributesAndroidInjector
 

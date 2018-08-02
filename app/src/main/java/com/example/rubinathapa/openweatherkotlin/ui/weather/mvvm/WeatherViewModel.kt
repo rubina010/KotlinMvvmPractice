@@ -5,13 +5,14 @@ import android.arch.lifecycle.AndroidViewModel
 import android.arch.lifecycle.LiveData
 import android.arch.lifecycle.MutableLiveData
 import com.example.rubinathapa.openweatherkotlin.data.Entity.GetWeatherResponse
+import com.example.rubinathapa.openweatherkotlin.di.scope.FragmentScoped
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.CompositeDisposable
 import io.reactivex.rxkotlin.subscribeBy
 import io.reactivex.schedulers.Schedulers
 import timber.log.Timber
 import javax.inject.Inject
-
+@FragmentScoped
 class WeatherViewModel @Inject constructor(val context: Application,
                                            val weatherRepository: WeatherRepository,
                                            val compositeDisposable: CompositeDisposable
